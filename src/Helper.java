@@ -1,17 +1,13 @@
 public class Helper {
 
-    public static void main() {
 
-
-
-    }
 
     public int countTheVowels() {
 
     }
 
     public char middleCharacter() {
-        
+
     }
 }
 
