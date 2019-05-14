@@ -22,12 +22,8 @@ public class StringAnalyser {
             System.out.println("Please enter the word you would like us to analyse for you.");
             String userString = input.nextLine();
             helper.setUserString(userString);
+            helper.middleCharacter();
         }
-
-
-
-
-
 
     }
 }

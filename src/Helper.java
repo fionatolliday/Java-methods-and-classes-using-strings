@@ -1,11 +1,7 @@
 public class Helper {
 
     String userString;
-
-    public Helper() {
-        this.userString = userString;
-    }
-
+    
 
     public void setUserString(String userString) {
         this.userString = userString;
@@ -15,25 +11,6 @@ public class Helper {
         return userString;
     }
 
-
-    public int countNumberOfCharacters() {
-        String string = getUserString();
-        int count = 0;
-
-        for (int i = 0; i < string.length(); i++) {
-            if (string.charAt(i) != ' ')
-                count++;
-        }
-        return count;
-    }
-
-    public boolean numberOfCharactersIsOdd() {
-        if (countNumberOfCharacters() %2 == 0){
-            return false;
-        } else {
-            return true;
-        }
-    }
 
 
     public int countTheVowels() {
@@ -48,12 +25,27 @@ public class Helper {
     }
         return count;
 }
-//
-//    }
-//
-//    public char middleCharacter() {
-//
-//    }
+
+
+    public void middleCharacter() {
+        int stringLength = getUserString().length();
+
+        if(stringLength %2 != 0){
+            int middleCharacter = stringLength/2 ;
+            char middleChar = getUserString().charAt(middleCharacter);
+            System.out.println("The middle character in your chosen word is: " + middleChar);
+        } else {
+            int secondMiddleCharacter = stringLength/2;
+            int firstMiddleCharacter = secondMiddleCharacter-1;
+            char secondMiddleChar = getUserString().charAt(secondMiddleCharacter);
+            char firstMiddleChar = getUserString().charAt(firstMiddleCharacter);
+            System.out.println("The two middle characters in your chosen word are: " + firstMiddleChar + secondMiddleChar);
+        }
+
+
+    }
+
+
 }
 
 
