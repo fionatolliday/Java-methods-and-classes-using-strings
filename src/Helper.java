@@ -1,7 +1,7 @@
 public class Helper {
 
-    String userString;
-    
+    private String userString;
+
 
     public void setUserString(String userString) {
         this.userString = userString;
