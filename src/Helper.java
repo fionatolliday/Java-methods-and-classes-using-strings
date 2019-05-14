@@ -27,13 +27,27 @@ public class Helper {
         return count;
     }
 
-    //    public boolean oddOrEvenNumberOfCharacters() {
-//
-//            return true;
-//    }
-//
-//
-//    public int countTheVowels() {
+    public boolean numberOfCharactersIsOdd() {
+        if (countNumberOfCharacters() %2 == 0){
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+
+    public int countTheVowels() {
+        int count = 0;
+        for (int i = 0; i < getUserString().length(); i++)
+    {
+        if (getUserString().charAt(i) == 'a' || getUserString().charAt(i) == 'e' || getUserString().charAt(i) == 'i'
+                || getUserString().charAt(i) == 'o' || getUserString().charAt(i) == 'u')
+        {
+            count++;
+        }
+    }
+        return count;
+}
 //
 //    }
 //
