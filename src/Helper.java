@@ -1,14 +1,45 @@
 public class Helper {
 
+    String userString;
 
-
-    public int countTheVowels() {
-
+    public Helper() {
+        this.userString = userString;
     }
 
-    public char middleCharacter() {
 
+    public void setUserString(String userString) {
+        this.userString = userString;
     }
+
+    public String getUserString() {
+        return userString;
+    }
+
+
+    public int countNumberOfCharacters() {
+        String string = getUserString();
+        int count = 0;
+
+        for (int i = 0; i < string.length(); i++) {
+            if (string.charAt(i) != ' ')
+                count++;
+        }
+        return count;
+    }
+
+    //    public boolean oddOrEvenNumberOfCharacters() {
+//
+//            return true;
+//    }
+//
+//
+//    public int countTheVowels() {
+//
+//    }
+//
+//    public char middleCharacter() {
+//
+//    }
 }
 
 
@@ -22,8 +53,8 @@ public class Helper {
 //        Expected Output:Number of  Vowels in the string: 1
 //
 //        2. Write a Java method to display the middle character of a string. Go to the editor
-//        Note: a) If the length of the string is odd there will be two middle characters.
-//        b) If the length of the string is even there will be one middle character.
+//        Note: a) If the length of the string is even there will be two middle characters.
+//        b) If the length of the string is odd there will be one middle character.
 //        Test Data:
 //        Input a string: 350
 //        Expected Output: The middle character in the string: 5

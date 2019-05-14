@@ -1,6 +1,30 @@
+import java.util.Scanner;
+
 public class StringAnalyser {
 
-    public static void main() {
+    public static void main(String[] args) {
+        Helper helper = new Helper();
+
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Press 1 to find out how many vowels are in a word of your choice, or " +
+                "press 2 to find out what the middle letter is in a word of your choice.");
+        String menuSelection = input.nextLine();
+        if (menuSelection.equals("1")) {
+            System.out.println("Please enter the word you would like us to analyse for you.");
+            String userString = input.nextLine();
+            helper.setUserString(userString);
+        }
+        
+        else {
+            System.out.println("Please enter the word you would like us to analyse for you.");
+            String userString = input.nextLine();
+            helper.setUserString(userString);
+        }
+
+
+
+
 
 
     }
